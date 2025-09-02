@@ -45,7 +45,7 @@ npm test
 
 ### Understand Unit Testing Fundamentals
 
-- Createing Unit Tests
+- Creating Unit Tests
 
   - Create a test file `fileName.test.js`
   - Create test cases
