@@ -1,6 +1,6 @@
 // shipping.test.js
 import { describe, it, expect } from "vitest";
-import { calculateShipping } from "../src/shipping.js";
+import { calculateShipping } from "../src/calculateShipping.js";
 
 describe("calculateShipping", () => {
 	it("charges $5 for standard shipping under $50", () => {
