@@ -1,4 +1,4 @@
-export function calculateShipping(type, amount) {
+/* export function calculateShipping(type, amount) {
   if (type === "standard") {
     if (amount < 50) {
       return 5;
@@ -14,4 +14,14 @@ export function calculateShipping(type, amount) {
   } else {
     return 0; // Unknown type
   }
+} */
+
+
+export function calculateShipping(type, amount) {
+	const shippingRules = {
+		standard: amount < 50 ? 5 : 0,
+		express: amount < 50 ? 10 : 5,
+	};
+
+	return shippingRules[type] ?? 0;
 }
